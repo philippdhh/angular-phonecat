@@ -1,14 +1,3 @@
-'use strict';
-
-/* jasmine specs for controllers go here */
-
-describe('controllers', function() {
-
-  it("should do something", function() {
-
-  });
-
-});
 
 describe('PhoneListCtrl', function() {
   beforeEach(module('phonecatApp'));
@@ -17,7 +6,7 @@ describe('PhoneListCtrl', function() {
     var scope = {};
     ctrl = $controller('PhoneListCtrl', {$scope: scope});
 
-    9(scope.phones.length).toBe(2);
+    expect(scope.phones.length).toBe(3);
 
   }));
 

@@ -10,30 +10,14 @@
 </head>
 <body ng-controller="PhoneListCtrl">
 
-  <p>Nothing here {{'yet' + '!'}}</p>
-  <p>1 + 1 = {{1 + 1}}</p>
   <h1>Phones</h1>
 <ul>
   <li ng-repeat="phone in phones">
     <span>{{phone.name}}</span>
     <p>{{phone.snippet}}</p>
-
   </li>
-
 </ul>
 
-<h2>Persons</h2>
-<ul>
-  <li ng-repeat="person in persons"><p>{{person.firstName + ' ' + person.lastName}}</p></li>
 
-</ul>
-  </br></br>
-<a href="#" ng-click="persons.push({'firstName':'Max', 'lastName':'Mustermann'})">Test</a>
-  </br>
-<a href="#" ng-click="persons.push({'firstName':currentPerson})">Test</a>
-  </br>
-<form>
-  <input ng-bind="currentPerson" id="input1" ng-value="currentPerson">
-</form>
 </body>
 </html>
